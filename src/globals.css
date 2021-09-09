@@ -1,0 +1,49 @@
+@import url("https://use.typekit.net/uiz1wzm.css");
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  /*global colors*/
+  --light-main: #ffffff;
+  --light-background: #eeeeee;
+  --light-disabled-text: #888888;
+  --dark-main: #303030;
+  --dark-background: #151515;
+  --dark-disabled-text: #505050;
+  --sub: #2c79ff;
+  --accent: #1dd8ff;
+}
+
+html,
+body {
+  overflow-y: hidden;
+  font-family: bungee, sans-serif;
+  font-weight: 500;
+  font-style: normal;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: orbitron, sans-serif;
+  font-weight: 900;
+  font-style: normal;
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+}
+
+
+hr {
+  background-color: var(--dark-main);
+  border: none;
+  width: 100%;
+  height: 1px;
+  margin: 4px 0;
+}

@@ -1,0 +1,42 @@
+.container {
+    width: 100vw;
+    height: 100vh;
+    background-color: #eeeeee;
+    background-repeat: no-repeat;
+    background-size: cover;
+    z-index: 1;
+}
+
+.today {
+    width: 1168px;
+    height: 80px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    margin: 0 auto;
+}
+
+.callender {
+    width: 1168px;
+    display: flex;
+    flex-wrap: wrap;
+    row-gap: 8px;
+    column-gap: 8px;
+    margin: 0 auto;
+    /* position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%); */
+}
+
+.backgroundSun {
+    width: 30vw;
+    height: 30vw;
+    border-radius: 999px;
+    background: linear-gradient(#ff0000, #ff8800);
+    position: fixed;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    left: 50%;
+    z-index: 0;
+}
