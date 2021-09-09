@@ -90,7 +90,7 @@ export default function index() {
                 <h2>Tue</h2>
                 <h2>Wed</h2>
                 <h2>Thu</h2>
-                <h2>Fri</h2>
+                <h2>Fri</h2> 
                 <h2>Sat</h2>
             </div> */}
             <div className={styles.callender}>
