@@ -21,6 +21,9 @@ body {
   font-family: bungee, sans-serif;
   font-weight: 500;
   font-style: normal;
+  background-color: var(--light-background);
+  background-repeat: no-repeat;
+  background-size: cover;
 }
 
 h1,

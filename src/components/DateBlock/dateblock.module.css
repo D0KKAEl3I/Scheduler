@@ -10,9 +10,10 @@
 }
 
 .container:hover {
-    background-color: #ffffffbe;
+    background-color: #ffffffce;
     border-radius: 8px;
     box-shadow: var(--accent) 0 0 16px;
+    backdrop-filter: blur(12px);
 }
 
 .container.disable {

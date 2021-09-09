@@ -1,0 +1,11 @@
+.container {
+    position: absolute;
+    width: 280px;
+    min-height: 40px;
+    border-radius: 16px;
+    padding: 8px;
+    background-color: var(--light-main);
+    z-index: 3;
+    box-shadow: #0000000f 0 0 24px;
+    transition: .2s;
+}

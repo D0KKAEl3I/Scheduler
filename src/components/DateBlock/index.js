@@ -1,9 +1,9 @@
 import React from 'react'
 import styles from './dateblock.module.css'
 
-export default function DateBlock({ date, day, todos = [], disable }) {
+export default function DateBlock({ date, day, todos = [], disable, onContextMenu }) {
     return (
-        <div className={`${styles.container} ${disable ? styles.disable : ""}`}>
+        <div className={`${styles.container} ${disable ? styles.disable : ""}`} onContextMenu={onContextMenu}>
             <p className={`${styles.date} ${disable ? styles.disable : ""}`}
                 style={
                     day == 0 ?
