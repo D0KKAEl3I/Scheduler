@@ -68,7 +68,6 @@
     font-family: orbitron, sans-serif;
     font-weight: 300;
     font-size: 28px;
-    color: var(--negative-main);
 }
 
 .menus {
@@ -84,6 +83,8 @@
     justify-content: start;
     align-items: center;
     padding: 8px 0;
+    -webkit-text-stroke: 1px;
+    -webkit-text-stroke-color: var(--negative-main);
 }
 
 .menus>li>img {
