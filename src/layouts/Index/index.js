@@ -9,6 +9,14 @@ export default function index() {
     const monthList = ['January', 'February', 'March', 'April', 'May', 'June', 'July', 'August', 'September', 'October', 'November', 'December']
     const lastDayOfMonthList = [31, 28, 31, 30, 31, 30, 31, 31, 30, 31, 30, 31]
 
+    const [darkmode, setDarkmode] = useState(false)
+
+    useEffect(() => {
+        axios.get('http://localhost:3000/api/setting')
+            .then(res => res.data)
+            .then(data => setDarkmode(data.darkmode))
+    }, [])
+
     const [today, setToday] = useState(new Date())
 
     const [datas, setDatas] = useState([])
@@ -113,7 +121,7 @@ export default function index() {
 
 
     return (
-        <div className={styles.container} onClick={closeOptionBox}>
+        <div className={`${!darkmode ? styles.lightmode : styles.darkmode} ${styles.container}`} onClick={closeOptionBox}>
             <Menu />
             <TodoBox position={optionBoxPostion} />
             <div className={styles.backgroundSun} />

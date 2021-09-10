@@ -1,6 +1,12 @@
 // Next.js API route support: https://nextjs.org/docs/api-routes/introduction
 
-const database = []
+const database = {
+  setting: {
+    darkmode: false
+  },
+  todos: []
+}
+
 class Data {
   date
   todos
@@ -20,5 +26,8 @@ module.exports = {
   },
   delete(data) {
     database.filter(datum => !(data === datum))
+  },
+  getSetting() {
+    return database.setting
   }
 }

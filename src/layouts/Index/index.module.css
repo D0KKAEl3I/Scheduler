@@ -2,6 +2,29 @@
     width: 100vw;
     height: 100vh;
     z-index: 1;
+    background-color: var(--background);
+}
+
+.lightmode,
+.lightmode * {
+    --main: var(--light-main);
+    --main-rgb: var(--light-main-rgb);
+    --background: var(--light-background);
+    --disabled-text: var(--light-disabled-text);
+    --negative-main: var(--dark-main);
+    --negative-background: var(--dark-background);
+    --negative-disabled-text: var(--dark-disabled-text);
+}
+
+.darkmode,
+.darkmode * {
+    --main: var(--dark-main);
+    --main-rgb: var(--dark-main-rgb);
+    --background: var(--dark-background);
+    --disabled-text: var(--dark-disabled-text);
+    --negative-main: var(--light-main);
+    --negative-background: var(--light-background);
+    --negative-disabled-text: var(--light-disabled-text);
 }
 
 .content {
@@ -15,6 +38,7 @@
     width: 100%;
     height: 80px;
     font-size: 24px;
+    color: var(--negative-main);
     display: flex;
     justify-content: space-around;
     align-items: center;
@@ -23,8 +47,14 @@
 .days {
     width: 100%;
     font-size: 20px;
+    color: var(--negative-main);
     display: flex;
-    justify-content: space-around;
+    column-gap: 8px;
+}
+
+.days>h2 {
+    text-align: center;
+    width: 160px;
 }
 
 .callender {
@@ -39,7 +69,7 @@
     width: 30vw;
     height: 30vw;
     border-radius: 999px;
-    background: linear-gradient(#ff0000, #ff8800);
+    background: linear-gradient(#ff02c8, #7f00ff);
     position: absolute;
     top: 50%;
     transform: translate(-50%, -50%);

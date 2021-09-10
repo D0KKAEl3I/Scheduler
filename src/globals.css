@@ -4,11 +4,13 @@
   padding: 0;
   margin: 0;
   box-sizing: border-box;
-  /*global colors*/
+  /* color pallete */
   --light-main: #ffffff;
+  --light-main-rgb: 255, 255, 255;
   --light-background: #eeeeee;
   --light-disabled-text: #888888;
   --dark-main: #303030;
+  --dark-main-rgb: 48, 48, 48;
   --dark-background: #151515;
   --dark-disabled-text: #505050;
   --sub: #2c79ff;
@@ -21,7 +23,7 @@ body {
   font-family: bungee, sans-serif;
   font-weight: 500;
   font-style: normal;
-  background-color: var(--light-background);
+  background-color: var(--background);
   background-repeat: no-repeat;
   background-size: cover;
 }
@@ -44,7 +46,7 @@ a {
 
 
 hr {
-  background-color: var(--dark-main);
+  background-color: var(--negative-main);
   border: none;
   width: 100%;
   height: 1px;

@@ -1,6 +1,10 @@
+import axios from 'axios'
 import '../globals.css'
 
 function MyApp({ Component, pageProps }) {
+
+
+
   return <Component {...pageProps} />
 }
 
